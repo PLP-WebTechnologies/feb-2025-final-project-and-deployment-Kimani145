@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Holy Wisdom Blog</title>
+      <link rel="stylesheet" href="styles/styles.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+      <header class="Header">
+        <div class="top-bar" id="top">
+          <button id="menu-toggle" class="menu-button">☰</button>
+          <h1 id="Heading">Holy Wisdom for the World</h1>
+          <button id="theme-toggle" class="theme-toggle">🌓</button>
+        </div>
+        <nav id="nav-menu" class="nav-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
+        <p class="Intro">Understanding God's Perspective on Mental Health</p>
+      </header>
+      <section class="hero">
+          <div class="hero-glass">
+            <div class="hero-icon">
+              <i class="fas fa-church"></i>
+            </div>
+            <h2 class="typewriter">
+             <span id="typed-text"></span>
+             <span class="blinking-cursor">|</span>
+            </h2>
+          </div>
+          <div class="scroll-indicator">
+            <span>↓ Scroll</span>
+          </div>
+        </section>
+              
+      <main class="blog-grid" id="blog-grid">
+        <!--javascript directly injects the blog posts here-->
+      </main>
+  
+      <footer class="footer">
+       <section id="Contact">
+         <h3>Contact Us</h3>
+         <p>Email: <a href="mailto:info@holywisdom.org">info@holywisdom.org</a></p>
+         <p>Phone: <a href="tel:+254712345678">+254 712 345 678</a></p>
+       </section>
+        <section id="Social-Media">
+          <h3>Follow Us</h3>
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com/holywisdom" target="_blank">
+              <i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://x.com/holywisdom" target="_blank">
+             <i class="fa-brands fa-x-twitter"></i> X</a></li>
+            <li><a href="https://www.instagram.com/holywisdom" target="_blank">
+              <i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/holywisdom" target="_blank">
+              <i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          </ul>
+        </section>
+        <section id="Privacy-Policy">
+         <h3>Privacy Policy</h3>
+         <p>Your privacy is important to us. We do not share your information with third parties.</p>
+        </section>
+        <section id="copyright">
+          <p>&copy; 2025 Holy Wisdom. All rights reserved.</p>
+        </section>
+
+     </footer>
+     <div id="newsletter-popup" class="newsletter-popup hidden">
+        <div class="newsletter-inner">
+            <button class="close-newsletter">×</button>
+            <section id="Newsletter">
+                <form id="newsletter-form">
+                    <input type="text" name="name" placeholder="Your name" required />
+                    <input type="email" name="email" placeholder="Enter your email"    required />
+
+                    <!-- Honeypot field: hidden from users but bots will fill it -->
+                    <input type="text" name="honeypot" class="honeypot" autocomplete="off" />
+
+                 <button type="submit">Subscribe</button>
+                </form>
+                <div id="newsletter-message"></div>
+            </section>
+        </div>
+    </div>
+           
+      <div class="back-to-top">
+          <a href="#top">Back to Top</a>
+      </div>
+       <!-- Modal Structure -->
+      <div id="post-modal" class="modal hidden" aria-hidden="true">
+        <div class="modal-content">
+          <button class="close-modal" aria-label="Close modal">&times;</button>
+          <article id="modal-article">
+            <h2 class="modal-title"></h2>
+            <p class="modal-body"></p>
+          </article>
+        </div>
+      </div>
+     <script src="scripts/script.js"></script>
+    </body>
+</html>
