@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const backspacingSpeed = 40;
   const pauseBetweenStrings = 1200;
 
+  window.addEventListener("load", () => {
+  document.getElementById("preloader").classList.add("fade-out");
+  });
+
 // =====================
 // Typing Quotes Section
 // =====================
